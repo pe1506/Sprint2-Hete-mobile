@@ -94,11 +94,6 @@ export function calcularStatus(valor: number): Status {
 }
 ```
 
-> **Observação de engenharia:** os limites (80 e 100) são globais nesta versão.
-> Em um sistema real, cada sensor teria seus próprios limites, já que 100 °C e
-> 100 % de umidade não representam o mesmo nível de risco. É uma evolução natural
-> para a próxima Sprint.
-
 O arquivo também define as **cores** de cada status, mantendo a aparência ligada
 à lógica e não espalhada pela interface. O `simulador.ts` gera leituras
 aleatórias dentro de faixas calibradas para que os três status apareçam durante a
